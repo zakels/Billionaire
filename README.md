@@ -15,6 +15,7 @@ This is done by the manipulation of imaginary money and investment positions tha
 
 
 ## Functional Requirements <a name="Func"></a>
+
 1.	Profile Page
   a.	As a user, I would like to create a new account.
   b.	As a user, I would like to reset my password via email if I do not remember the original one.
@@ -89,38 +90,39 @@ Our general idea of the events are described as above. Users will make their req
 
 
 ## Design Decision <a name="decision"></a>
-# Functional Issues 
+**Functional Issues 
+
 1. Do users have to login to use our service, such as news, games, and tutorial?
 
 Option 1: Users have to create an account that is unique to our website to use all the function.
 Option 2: Users can login using Facebook or any other social media account to use all the function and join the game.	
-# Option 3: Users have to create an account to join the stock game and watch the tutorial but they do not have to create an account to use the other services such as search an stock and read stock news, etc 
+**Option 3: Users have to create an account to join the stock game and watch the tutorial but they do not have to create an account to use the other services such as search an stock and read stock news, etc 
 
 We decide that users have to create an account to join the stock game and view the tutorials, but they do not have to create an account to use the other services such as stock information, and market news etc. Since the purpose of our website is to assist stock beginners to have an virtual trading experiences	at stock market, and teach them some trading strategies. Only if user has an account, we can record the transactions,and the profits and loss situations of different users.
 
 2. How do users access to a specific stock?
 
 Option 1: Navigate through menus 
-# Option 2: Use search bar
+**Option 2: Use search bar
 
 We decide to use search bar only. Traversing through different menus is tedious to users while providing users with a search bar to search a specific stock is much more efficient. Since users may already have a targeted stock, there is no need to have separate menus for navigation.
 
-# Non-Functional Issues
+**Non-Functional Issues
 1. Do users need to create an account to get on our website?
 Option 1: User must have  an account to use our website.
 Option 2: User does not need an account to use our website
-# Option 3: Users do not need an account to use our website, but users need an account for functions other than searching stocks.
+**Option 3: Users do not need an account to use our website, but users need an account for functions other than searching stocks.
 
 We decided to go with option 3,  because option 1 is unlikely to attract users and option 2 is unlikely to maintain consistent users.
 
 2. What should we use for our database?
 Option 1: We use a non relational database such as mySQL
-# Option 2: We use a non relational database such as MongoDB
+**Option 2: We use a non relational database such as MongoDB
 
 It was a hard decision for us, since half of the members are more familiar with MongoDB, and the other half are more familiar with mySQL. In the end, we decide to use MongoDB, as we believe it is easier to get specific data using mongoDB.
 
 3. What front end framework should we use?
-# Option 1: Angular
+*Option 1: Angular*
 Option 2: vue.js
 Option 3: Ember.js
 
@@ -128,7 +130,7 @@ We decided to use Angular as a front end for multiple reasons. It has client-sid
 
 4. What back end framework(s) should we use?
 Option 1: PHP
-# Option 2: Node.js with Express.js
+**Option 2: Node.js with Express.js
 
 We are using Node.js because it is extremely lightweight and efficient
 Express is linked tightly to Node as well, and we will be using that as a “fast, unopinionated, minimalist” web framework with Node. Express abstracts out some low level logic that can could cause unnecessary problems if we went without. Express also helps with file organization for a MVC structure and we will use it for routing. Using Node.js would also allow us to code in JavaScript on the client and server; we wouldn’t have to switch gears. Node.js, however, when compared to PHP, does not integrate with as many older technologies, which is not an issue for us because we don’t plan to be working with any obscure API’s.
@@ -136,11 +138,11 @@ Express is linked tightly to Node as well, and we will be using that as a “fas
 5. Which method of authentication should we use
 Option 1: Cookie based authentication 
 Option 2: Token based authentication 
-# Option 3: Passport.js
+**Option 3: Passport.js
 
 We chose to use passport.js, a node.js middleware, because it is easiest to implement, since we are already using Express. The other two options have a steeper learning curve and passport would allow us to easily add multiple user login options (Facebook, Twitter,  Google, etc)
 
 
 ## Further Information <a name="further"></a>
-# For further information on sequence events, flow map, Frontend UI mock ups, etc.
-# Please check out the directory /doc
+**For further information on sequence events, flow map, Frontend UI mock ups, etc.
+**Please check out the directory /doc
